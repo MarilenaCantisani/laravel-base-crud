@@ -2,8 +2,6 @@
 
 @section('content')
 
-<h1>home</h1>
-
-
+<h1>comics</h1>
+    
 @endsection
-
