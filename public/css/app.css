@@ -11243,3 +11243,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+}

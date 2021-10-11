@@ -13,6 +13,7 @@
     @include('includes.header')
     {{-- Main content --}}
     <main>
+        <div></div>
         @yield('content')
     </main>
 
