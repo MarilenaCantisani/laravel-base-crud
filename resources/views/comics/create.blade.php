@@ -14,36 +14,43 @@
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="title" class="form-label">Title of the comic</label>
-                        <input type="email" class="form-control" id="title" name="title">
+                        <input type="text" class="form-control" id="title" name="title">
                         <div id="title" class="form-text">Add the title of the comic.</div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="series" class="form-label">Comic series</label>
-                        <input type="email" class="form-control" id="series" name="series">
+                        <input type="text" class="form-control" id="series" name="series">
                         <div id="series" class="form-text">Add the comic book series.</div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="mb-3">
                         <label for="type" class="form-label">Comic type</label>
-                        <input type="type" class="form-control" id="type" name="type">
+                        <input type="text" class="form-control" id="type" name="type">
                         <div id="type" class="form-text">Add the type of the comic.</div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="mb-3">
                         <label for="price" class="form-label">Comic price</label>
-                        <input type="email" class="form-control" id="price" name="price">
+                        <input type="text" class="form-control" id="price" name="price">
                         <div id="price" class="form-text">Add the price of the comic.</div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="mb-3">
                         <label for="sale_date" class="form-label">Comic date</label>
-                        <input type="sale_date" class="form-control" id="sale_date" name="sale_date">
-                        <div id="sale_date" class="form-text">Add the date of the comic</div>
+                        <input type="text" class="form-control" id="sale_date" name="sale_date">
+                        <div id="sale_date" class="form-text">Add the date of the comic ('YYYY-MM-DD')</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="thumb" class="form-label">Comic book cover</label>
+                        <input type="text" class="form-control" id="thumb" name="thumb">
+                        <div id="thumb" class="form-text">Add link to the comic book cover.</div>
                     </div>
                 </div>
                 <div class="col-12">
@@ -56,7 +63,7 @@
             </div>
             <div class="d-flex justify-content-end">
                 <button type="reset" class="btn btn-secondary mx-2">Reset</button>
-                <button type="submit" class="btn btn-success mx-2"><a class="text-white text-decoration-none" href="{{route('comics.store')}}">Crea</a></button>
+                <button type="submit" class="btn btn-success mx-2">Crea</button>
                 <button class="btn btn-primary ms-2"><a class="text-white text-decoration-none" href="{{route('comics.index')}}">Indietro</a></button>
             </div>
             
