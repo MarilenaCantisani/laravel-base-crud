@@ -63,8 +63,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end">
-                <button type="reset" class="btn btn-secondary mx-2">Reset</button>
-                <button type="submit" class="btn btn-success mx-2">Create</button>
+                <button type="submit" class="btn btn-success mx-2">Edit</button>
                 <button class="btn btn-primary ms-2"><a class="text-white text-decoration-none" href="{{route('comics.index')}}">Back</a></button>
             </div>     
         </form>
