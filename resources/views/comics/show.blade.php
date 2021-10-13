@@ -23,7 +23,8 @@
 
     {{-- Link of the route of the page comics.index --}}
     <div class="d-flex justify-content-end">
-        <a href="{{route('comics.index')}}" class="btn btn-primary">Indietro</a>
+        <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-success">Edit</a>
+        <a href="{{route('comics.index')}}" class="btn btn-primary ms-2">Back</a>
     </div>
 </section>   
 @endsection

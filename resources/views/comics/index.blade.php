@@ -21,11 +21,11 @@
     <div class="row justify-content-evenly my-4">
         {{-- Forelse cycle to print the data of each comic --}}
         @forelse ($comics as $comic)
-            <div class="card me-4" style="width: 18rem;">
+            <div class="card me-4 my-3 pt-3" style="width: 18rem;">
                 <img src="{{$comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
                 <div class="card-body">
-                <h5 class="card-title">{{$comic->title}}</h5>
-                <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">View more info</a>
+                <h5 class="card-title text-center">{{$comic->title}}</h5>
+                <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary d-flex justify-content-center">View more info</a>
                 </div>
             </div>          
         @empty
