@@ -1,10 +1,13 @@
+{{-- Insert page layout --}}
 @extends('layout.main')
-
+{{-- Insert page title --}}
 @section('title', 'Comics')
+{{-- Fontawesome --}}
 @section('cdns')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
 
+{{-- Insert page content --}}
 @section('content')
 <section class="container">
     <div class="d-flex justify-content-between align-items-center me-4">
@@ -16,7 +19,7 @@
         </button>
     </div>
     <div class="row justify-content-evenly my-4">
-
+        {{-- Forelse cycle to print the data of each comic --}}
         @forelse ($comics as $comic)
             <div class="card me-4" style="width: 18rem;">
                 <img src="{{$comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
